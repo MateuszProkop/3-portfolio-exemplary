@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio">
+    <meta name="author" content="Mateusz Prokop">
+    <meta name="keywords" content="Portfolio, JavaScript, HTML, CSS, Job">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div>
+        <div class="navigation"> 
+            <div class="navigation__initials"> 
+                <p> <J class="D"></J></p>
+            </div>
+            <div>    
+                <nav>
+                    <ul  id ="navigation-list" class="navigation navigation__list">
+                        <li class="navigation__item"><a class="navigation__link" href="#about-me">About me</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#skills">Skills</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#portfolio">Portfolio</a></li>
+                        <li class="navigation__item" ><a class="navigation__link" href="#blog">Blog</a></li>
+                        <li class="navigation__item navigation__item--contact" ><a class="navigation__link" href="#contact">Contact me</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="javascript:void(0);"  id="hamburger-icon" class="navigation__hamburgermenu" onclick="showHamburgerMenu()">
+                <i class="fa fa-4x fa-bars"></i> </a>
+        </div>
+        <div class="header">
+            <div class="header__picture">
+                <img class="header__image" src="pic.JPG" alt="my picture">
+            </div>
+            <div class="header__introduction">
+                <header>
+                    <h1>&#47;&#47;Hi, my name is John Doe</h1>
+                    <p class= "subtitle">Software Engineer</p>
+                    <p>Passionate Techy and Tech Author </br>with 3 years of experience within the field</p>
+                </header>
+                <div class="header__icons--wrapper">
+                    <p class="text">See my works</p>
+                    <img class="header__icon" src="bit_bucket_icon.png" alt="bitbucket icon" width="50" height="60">
+                    <img class="header__icon" src="dev_icon.png" alt="dev icon" width="50" height="50">
+                </div>
+            </div>
+            <div class="header__contact">
+                <h2>&#47;&#47; I am a freelancer</h2>
+                <p>Contact me if you want to work with me</p>
+                <div class=" header header__buttons">
+                    <button class="button" type="button">Hire Me</button>
+                    <button class="button" type="button">Download CV</button>
+                </div>
+            </div>
+        </div>
+        <div >
+            <main>
+                <div id="about-me" class=" header aboutme">
+                    <div class="aboutme__section">
+                        <h2>&#47;&#47; About me</h2>
+                        <p class="subtitle">All about Techy</p>
+                        <p class="text">Lorem ipsum dolor sit amet,</p>
+                        <p class="text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p class="subtitle">My interests</p>
+                        <ul class="aboutme__list"> 
+                            <li>music</li>
+                            <li>kitesurfing</li>
+                            <li>cycling</li>
+                        </ul>
+                        <div class="header">
+                            <p><strong>Ukończyłem kurs Easy Code</strong></p>
+                            <img src="easy_code_button.png" alt="Easy code" height:="80" width="160" >
+                        </div>
+                    </div>
+                    <div id="skills" class="skill">
+                        <h2>&#47;&#47; Skills</h2>
+                        <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <div >
+                            <div class="skill__meter"><div class=" skill__bar skill__PHP"><p class="skill__text">PHP 100%</p></div></div>
+                            <div class="skill__meter"><div class=" skill__bar skill__JS"><p class="skill__text">JS 90%</p></div></div>
+                            <div class="skill__meter"><div class=" skill__bar skill__HTML"><p class="skill__text">HTML 90%</p></div></div>
+                            <div class="skill__meter"><div class=" skill__bar skill__NODE-JS"><p class="skill__text">NODE JS 60%</p></div></div>
+                            <div class="skill__meter"><div class=" skill__bar skill__CSS"><p class="skill__text">CSS 90%</p></div></div>
+                            <div class="skill__meter"><div class=" skill__bar skill__GO"><p class="skill__text">GO 60%</p></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tools">
+                    <h2>&#47;&#47; Tools</h2>
+                    <p class="subtitle">My essentials</p>
+                    <div class="tools__wrapper">
+                        <div class="tools__language">
+                            <i  class="fab fa-react fa-2x tools__icon"></i>
+                            <p class="tools__description">React 16.6.3</p>
+                        </div>
+                        <div class="tools__language">
+                            <i  class="fab fa-html5 fa-2x tools__icon"></i>
+                            <p class="tools__description">HTML</p>
+                        </div>
+                        <div class="tools__language">
+                            <i  class="fab fa-node-js fa-2x tools__icon"></i>
+                            <p class="tools__description">4.16.4</p>
+                        </div>
+                        <div class="tools__language">
+                            <i  class="fab fa-css3-alt fa-2x tools__icon"></i>
+                            <p class="tools__description">CSS</p>
+                        </div>
+                        <div class="tools__language">
+                            <i  class="fab fa-js fa-2x tools__icon"></i>
+                            <p class="tools__description">JS</p> 
+                        </div>
+                        <div class="tools__language">
+                            <i  class="fab fa-php fa-2x tools__icon"></i>
+                            <p class="tools__description">PHP</p>
+                        </div>
+                        <div class="tools__language">
+                            <i  class="fab fa-python fa-2x tools__icon"></i>
+                            <p class="tools__description">Python</p>
+                        </div>
+                        <div class="tools__language">
+                            <i  class="fab fa-java fa-2x tools__icon"></i>
+                            <p class="tools__description">Java</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="portfolio" class="portfolio">
+                    <h2>&#47;&#47; My works</h2>
+                    <p class="subtitle">Portfolio</p>
+                    <p class="text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="portfolio__wrapper">
+                        <div class="portfolio__element--wrapper">
+                            <div class="portfolio__element--inside--wrapper">
+                                <div class="portfolio__image--wrapper" >
+                                    <img   class="portfolio__image" src="portfolio_case_01.png" alt="my first project">
+                                </div>
+                                <div class="header portfolio__icons--wrapper">
+                                    <a href="#"><img class="portfolio__icons" src="bit_bucket_icon.png" alt="bitbucket icon"></a>
+                                    <a href="#"><img class="portfolio__icons" src="external_link_icon.png" alt="dev icon"></a>
+                                </div>
+                            </div>
+                            <div class="portfolio__element--overlay">
+                                <div class="portfolio__text--overlay">
+                                    <p class= "portfolio__overlay--header">Office software</p>
+                                    <p>- task management</br></br>Tools: React / Redux / Program 01 / Flexbox</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__element--wrapper">
+                            <div class="portfolio__element--inside--wrapper">
+                                <div class="portfolio__image--wrapper" >
+                                    <img   class="portfolio__image" src="portfolio_case_02.png" alt="my second project">
+                                </div>
+                                <div class="header portfolio__icons--wrapper">
+                                    <a href="#"><img class="portfolio__icons" src="bit_bucket_icon.png" alt="bitbucket icon"></a>
+                                    <a href="#"><img class="portfolio__icons" src="external_link_icon.png" alt="dev icon"></a>
+                                </div>
+                            </div>
+                            <div class="portfolio__element--overlay">
+                                <div class="portfolio__text--overlay">
+                                    <p class= "portfolio__overlay--header">Office software</p>
+                                    <p>- task management</br></br>Tools: React / Redux / Program 01 / Flexbox</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__element--wrapper">
+                            <div class="portfolio__element--inside--wrapper">
+                                <div class="portfolio__image--wrapper" >
+                                    <img   class="portfolio__image" src="portfolio_case_03.png" alt="my third project">
+                                </div>
+                                <div class="header portfolio__icons--wrapper">
+                                    <a href="#"><img class="portfolio__icons" src="bit_bucket_icon.png" alt="bitbucket icon"></a>
+                                    <a href="#"><img class="portfolio__icons" src="external_link_icon.png" alt="dev icon"></a>
+                                </div>
+                            </div>
+                            <div class="portfolio__element--overlay">
+                                <div class="portfolio__text--overlay">
+                                    <p class= "portfolio__overlay--header">Office software</p>
+                                    <p>- task management</br></br>Tools: React / Redux / Program 01 / Flexbox</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__element--wrapper">
+                            <div class="portfolio__element--inside--wrapper">
+                                <div class="portfolio__image--wrapper" >
+                                    <img   class="portfolio__image" src="portfolio_case_04.png" alt="my forth project">
+                                </div>
+                                <div class="header portfolio__icons--wrapper">
+                                    <a href="#"><img class="portfolio__icons" src="bit_bucket_icon.png" alt="bitbucket icon"></a>
+                                    <a href="#"><img class="portfolio__icons" src="external_link_icon.png" alt="dev icon"></a>
+                                </div>
+                            </div>
+                            <div class="portfolio__element--overlay">
+                                <div class="portfolio__text--overlay">
+                                    <p class= "portfolio__overlay--header">Office software</p>
+                                    <p>- task management</br></br>Tools: React / Redux / Program 01 / Flexbox</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__element--wrapper">
+                            <div class="portfolio__element--inside--wrapper">
+                                <div class="portfolio__image--wrapper" >
+                                    <img   class="portfolio__image" src="portfolio_case_05.png" alt="my fifth project">
+                                </div>
+                                <div class="header portfolio__icons--wrapper">
+                                    <a href="#"><img class="portfolio__icons" src="bit_bucket_icon.png" alt="bitbucket icon"></a>
+                                    <a href="#"><img class="portfolio__icons" src="external_link_icon.png" alt="dev icon"></a>
+                                </div>
+                            </div>
+                            <div class="portfolio__element--overlay">
+                                <div class="portfolio__text--overlay">
+                                    <p class= "portfolio__overlay--header">Office software</p>
+                                    <p>- task management</br></br>Tools: React / Redux / Program 01 / Flexbox</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__element--wrapper">
+                            <div class="portfolio__element--inside--wrapper">
+                                <div class="portfolio__image--wrapper" >
+                                    <img   class="portfolio__image" src="portfolio_case_06.png" alt="my sixth project">
+                                </div>
+                                <div class="header portfolio__icons--wrapper">
+                                    <a href="#"><img class="portfolio__icons" src="bit_bucket_icon.png" alt="bitbucket icon"></a>
+                                    <a href="#"><img class="portfolio__icons" src="external_link_icon.png" alt="dev icon"></a>
+                                </div>
+                            </div>
+                            <div class="portfolio__element--overlay">
+                                <div class="portfolio__text--overlay">
+                                    <p class= "portfolio__overlay--header">Office software</p>
+                                    <p>- task management</br></br>Tools: React / Redux / Program 01 / Flexbox</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div  id="blog" class="blog">
+                    <h2>&#47;&#47; Blog posts</h2>
+                    <p class="subtitle">Hints and tips</p>
+                    <div class="blog__post">
+                        <div>
+                            <img class="blog__image" src="portfolio_case_05.png" alt="my first blog post">
+                        </div>
+                        <div class="blog__info">
+                            <div class="blog__header">
+                                <h2>&#47;&#47; Title 01</h2>
+                                <p class="blog__author">author, 01.09.2020</p>
+                            </div>
+                            <div>
+                                <p class="subtitle">Secondary Title</p>
+                                <p class="text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <div>
+                                <p class="blog__link"><a class="blog__link" href="#">Read more &#187;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__post">
+                        <div>
+                            <img class="blog__image" src="portfolio_case_06.png" alt="my second blog post">
+                        </div>
+                        <div class="blog__info">
+                            <div class="blog__header">
+                                <h2>&#47;&#47; Title 01</h2>
+                                <p class="blog__author">author, 01.09.2020</p>
+                            </div>
+                            <div>
+                                <p class="subtitle">Secondary Title</p>
+                                <p class="text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <div>
+                                <p class="blog__link"><a class="blog__link" href="#">Read more &#187;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact" class="contact">
+                    <div class="contact__form">
+                        <h2>&#47;&#47; Contact me</h2>
+                        <p class="text">If you are willing to work with me, contact me. I can join your conference to serve you with my engeneering experience.</p>
+                        <form action="#" method="get">
+                            <input class="contact__input" type="email" name="email" placeholder="Your email">
+                            <input class="contact__input" type="text" name="username" placeholder="Your name">
+                            <textarea class="contact__input contact__textarea" name="comment" placeholder="How can I help you? Please, put here your message/request."></textarea>
+                            <input class="contact__input button" class="button" type="submit" name="Send" value="Send">
+                        </form>
+                    </div>
+                    <div class="contact__author">
+                        <div>
+                            <img class="contact__image" src="pic.JPG" alt="my picture">
+                        </div>
+                        <div class="contact__info">
+                            <p class="contact__text" >Author: John Doe</p>
+                            <p class="contact__text" >Username: @JohnDoe</p>
+                            <p class="contact__text" >description: University Graduate | Software Engineer</p>
+                            <p class="contact__text" >homepage: johndoe.github.pl</p>
+                            <p class="contact__text" >repository type: Open-source</p>
+                            <p class="contact__text" >url: github.com/johndoe</p>
+                        </div>
+                        <div class="contact__icon--wrapper">
+                            <div>
+                                <i class="fas fa-2x fa-address-book"></i>
+                            </div>
+                            <div>
+                                <p class="contact__text" >John.Doe@gmail.com</p>
+                                <p class="contact__text" >012 345 678</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </main>
+        </div>
+    </div>
+    <script type="text/javascript" src="portfolio.js"></script>
+    
+</body>
+</html>
